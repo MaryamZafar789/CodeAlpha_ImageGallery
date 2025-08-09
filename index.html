@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Image Gallery </title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+  </head>
+  <body>
+    <div class="lightbox">
+      <div class="wrapper">
+        <header>
+          <div class="photographer">
+            <i class="uil uil-camera"></i>
+            <span class="img-title">Image Preview</span>
+          </div>
+          <div class="buttons">
+            <button class="download-btn" title="Download"><i class="uil uil-import"></i></button>
+            <button class="close-icon" title="Close"><i class="uil uil-times"></i></button>
+          </div>
+        </header>
+        <div class="preview-img">
+          <button class="nav-btn prev-btn" title="Previous"><i class="uil uil-angle-left"></i></button>
+          <div class="img-container">
+            <img src="" alt="preview-img" class="lightbox-img">
+          </div>
+          <button class="nav-btn next-btn" title="Next"><i class="uil uil-angle-right"></i></button>
+        </div>
+      </div>
+    </div>
+
+    <section class="search">
+      <img src="./images/search-img.jpg" alt="search-img" class="search-bg">
+      <div class="content">
+        <h1>Image Gallery</h1>
+        <p>Browse beautiful images in different categories</p>
+        <div class="search-box">
+          <i class="uil uil-search"></i>
+          <input type="text" placeholder="Search images...">
+        </div>
+      </div>
+    </section>
+
+    <div class="filter-container">
+      <div class="filter-buttons">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="nature">Nature</button>
+        <button class="filter-btn" data-filter="animals">Animals</button>
+        <button class="filter-btn" data-filter="Flowers">Flowers</button>
+        <button class="filter-btn" data-filter="food">Food</button>
+      </div>
+    </div>
+
+    <section class="gallery">
+      <ul class="images">
+        <li class="img-card" data-category="nature">
+          <img src="images/img-4.jpg" alt="Nature image 1">
+          <div class="img-info">
+            <span>Nature waterfall</span>
+          </div>
+        </li>
+        <li class="img-card" data-category="animals">
+          <img src="images/img-1.jpg" alt="Animal image 1">
+          <div class="img-info">
+            <span>Wildlife</span>
+          </div>
+        </li>
+        <li class="img-card" data-category="Flowers">
+          <img src="images/img-7.jpg" alt="Flowers image 1">
+          <div class="img-info">
+            <span>beautiful Flowers</span>
+          </div>
+        </li>
+        <li class="img-card" data-category="food">
+          <img src="images/img-9.jpg" alt="Food image 1">
+          <div class="img-info">
+            <span>Delicious Breakfast </span>
+          </div>
+        </li>
+        <li class="img-card" data-category="nature">
+          <img src="images/img-6.jpg" alt="Nature image 2">
+          <div class="img-info">
+            <span>Sea View</span>
+          </div>
+        </li>
+        <li class="img-card" data-category="animals">
+          <img src="images/img-2.jpg" alt="Animal image 2">
+          <div class="img-info">
+            <span>Aquatic Creature</span>
+          </div>
+        </li>
+        <li class="img-card" data-category="Flowers">
+          <img src="images/img-8.jpg" alt="Flowers image 2">
+          <div class="img-info">
+            <span>Sunflowers </span>
+          </div>
+        </li>
+        <li class="img-card" data-category="food">
+          <img src="images/img-10.jpg" alt="Food image 2">
+          <div class="img-info">
+            <span> Yummy Cake </span>
+          </div>
+        </li>
+        <li class="img-card" data-category="nature">
+          <img src="images/img-12.jpg" alt="Nature image 3">
+          <div class="img-info">
+            <span>nature </span>
+          </div>
+        </li>
+        <li class="img-card" data-category="animals">
+          <img src="images/img-3.jpg" alt="Animal image 3">
+          <div class="img-info">
+            <span>Wide life creature </span>
+          </div>
+        </li>
+        <li class="img-card" data-category="Flowers ">
+          <img src="images/img-13.jpg" al7t="Flowers  image 3">
+          <div class="img-info">
+            <span>Flowers </span>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>
